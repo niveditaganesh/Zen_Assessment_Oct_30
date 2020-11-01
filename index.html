@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+    <title>Food Recipe Search</title>
+  </head>
+  <body>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+    #div1{
+    width:19rem;
+    display:inline-block;
+    background-image: url('https://cdn.wallpapersafari.com/48/53/3zmVMu.jpg');
+    /* background-color: rgb(156, 146, 146); */
+   margin:10px;
+   padding:10px;border-radius: 0 0 5% 5%;
+   color:white
+}
+body{
+    background-image: url('https://i.pinimg.com/originals/e5/56/c9/e556c9883f0ac01ee2e533ca8d192624.jpg');
+    font-family: 'PT Serif', serif;
+margin:10rem;padding: 10px;
+}
+.center {
+  margin: 0px auto;
+  text-align: left;
+}
+#image{
+    width: 18rem;
+    height: 18rem;
+    border-radius: 0 0 5% 5%;
+}
+#web1,#s_link,#f_link,#cal,#tit{
+    text-align: center;
+    
+}
+.modz{
+    color:white
+}
+</style>
+
+
+<script>
+   $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+$('.modz').on('shown.bs.modal', function () {
+  $('.mods').trigger('focus')
+})
+$(document).ready(function(){
+  $(".mods").click(function(){
+    $("myModal"+i).modal("toggle");
+  });
+});
+$(document).ready(function(){
+  $(".mods").click(function(){
+    $("nextModal"+i).modal("toggle");
+  });
+});
+    </script>
+<script src='script.js'></script>
+</body>
+</html>
